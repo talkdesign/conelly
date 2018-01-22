@@ -1,0 +1,303 @@
+.wrap-site
+    >.banner-topo
+        background:
+            image: url('../images/bg-banner.jpg')
+            position: top center
+            size: cover
+            repeat: no-repeat
+            attachment: fixed
+        min-height: 800px
+        >.container
+            >.textos
+                +clearfix ()
+                background: 
+                    image: url('../images/nuvem-banner.png')
+                    position: top center
+                    repeat: no-repeat
+                height: 443px
+                margin: 160px auto 0
+                text-align: center
+                display: table
+                +font-family-2
+                color: $branco
+                +font-size (50px)
+
+                +breakpoint ($celular)
+                    background-image: none
+                    margin: 80px auto 0
+                +breakpoint ($tablet)
+                    background-image: none
+
+                >.blocotexto
+                    margin: 95px auto
+                    +make-md-column (8)
+                    +make-md-column-offset (2)
+                    >.frase
+                        display: block
+                        margin: auto
+                        position: relative
+
+                        &:after,
+                        &:before
+                            content: ""
+                            height: 2px
+                            position: absolute
+                            width: 7%
+                            +rotate (0deg)
+                            background: $bege
+                            display: block
+                        &:before
+                            top: 18px
+                            left: 10px
+                            +breakpoint ($celular)
+                                left: 0
+                        &:after
+                            right: 10px
+                            top: 18px
+                            +breakpoint ($celular)
+                                right: 0
+                    
+                    >.titulo
+                        +font-size (113px)
+                        color: $bege
+                        line-height: 66px
+                        margin: auto
+            >.tags                
+                color: $branco
+                text-transform: uppercase
+                +font-size (35px)
+                text-align: center
+                margin: 50px auto 0
+
+                +breakpoint ($celular)
+                    margin:  0 auto 0
+
+                &:after
+                    content: ""
+                    background:
+                        image: url('../images/setadown.png')
+                        repeat: no-repeat
+                    width: 74px
+                    height: 55px
+                    display: block
+                    margin: 50px auto
+    >.intro        
+        text-align: center
+        >.container
+            >.textointro
+                +font-family-2
+                +font-size (50px)
+                line-height: 30px
+                &:after
+                    content: ""
+                    height: 2px
+                    background: $marrom-claro
+                    width: 10%
+                    display: table
+                    margin: 30px auto
+    >.colchao-box
+        background:
+            image: url('../images/elementos-box.png')
+            repeat: no-repeat
+            position: top center
+            color: $bege
+        min-height: 730px
+        padding: 0 0 30px
+        +breakpoint ($tablet)
+            margin: 0 0 50px
+        +breakpoint ($celular)
+            background-image: none
+            min-height: 100% 
+        >.container
+            >.texto
+                +make-md-column (4)
+                margin: 100px 0
+                +clearfix ()  
+                +breakpoint ($tablet)
+                    margin: 0 0 50px
+                +breakpoint ($celular)
+                    margin: 0 0 0px  
+                    text-align: center            
+
+                >.titulotextos
+                    +font-size (100px)
+                    line-height: 55px
+                >.subtitulo
+                    +font-size (43px)
+                    line-height: 35px
+            >.imagem
+                +make-md-column (8)
+                margin: 185px 0 70px
+                +clearfix ()
+
+                +breakpoint ($tablet)
+                    margin: 0 0 50px
+                +breakpoint ($celular)
+                    margin: 0 0 50px
+
+    >.dormitorios
+        background:
+            image: url('../images/bg-dormitorios.jpg')
+            repeat: no-repeat
+            position: bottom center
+            //attachment: fixed
+            //size: cover
+        min-height: 1100px
+        color: $branco
+        +breakpoint ($tablet)
+            margin: 0 0 50px
+        +breakpoint ($celular)
+            min-height: 100% 
+        >.container
+            >.header-secao
+                margin: 210px auto 0
+                text-align: center
+
+                +breakpoint ($celular)
+                    margin: 0 auto 0 auto
+                    
+                >.titulosecao
+                    color: $branco
+                    &:before
+                        content: ""
+                        background: 
+                            image: url('../images/nuvens-small.png')
+                            position: top center
+                        width: 367px
+                        height: 71px
+                        display: block
+                        margin: 0 auto 40px
+            >.textos
+                +make-md-column (4)
+                margin: 100px 0
+                +clearfix ()  
+                +breakpoint ($tablet)
+                    margin: 0 0 50px
+                +breakpoint ($celular)
+                    margin: 0 0 0px  
+                    text-align: center
+
+                >.titulotextos
+                    +font-size (90px)
+                    line-height: 55px
+                    color: $creme
+                >.subtitulo
+                    +font-size (33px)
+                    line-height: 35px
+            >.imagem
+                +make-md-column (8)
+                margin: 20px auto 40px
+                +clearfix
+
+    >.papeis-parede
+        margin: 30px 0
+        background: 
+            image: url('../images/bgpapelparede.jpg')
+            repeat: repeat
+        >.header-secao
+            background: 
+                image: url('../images/faixa-papelparede.jpg')
+                repeat: no-repeat
+                position: top center
+                size: cover
+                //attachment: fixed
+            height: 359px
+            text-align: center
+            color: $branco
+            margin: 0 auto 120px auto
+
+            +breakpoint ($celular)
+                margin: 0 auto 10px auto
+
+            >.titulosecao
+                color: $branco
+                display: table
+                margin: 0 auto
+
+                &:before
+                    content: ""
+                    background: 
+                        image: url('../images/nuvens-small.png')
+                        position: top center
+                    width: 367px
+                    height: 71px
+                    display: block
+                    margin: 100px auto 40px
+
+                    +breakpoint ($celular)
+                        margin: 50px auto 40px
+
+                >.subtitulo
+                    +make-md-column (4)
+                    +make-md-column-offset (2)
+                    +clearfix
+        >.container
+            >.box-imagens
+                +make-row
+                [class^="col"]
+                    +make-md-column (6)
+                    >.boximagem
+                        +flexbox
+                        +align-items (center)
+                        margin: 30px 0
+                        position: relative
+                    [class^="nomepapel"]
+                        text-transform: uppercase
+                        color: $branco
+                        font-weight: $extrabold
+                        +font-size (65px)
+                        position: absolute
+                        display: table
+                        text-align: center
+                        width: 100%
+    >.entre-contato 
+        background: 
+            image: url('../images/faixa-entrecontato.jpg')
+            repeat: no-repeat
+            position: top center
+            size: cover
+        height: 300px
+        text-align: center
+        margin: 0 auto 30px auto
+        >.container
+            >.header-secao
+                text-align: center
+                margin: 100px auto
+
+                +breakpoint ($celular)
+                    margin: 30px auto
+
+                >.titulotextos
+                    color: $branco
+                    +font-size (150px)
+
+                    +breakpoint ($celular)
+                        +font-size (120px)
+.rodape
+    >.container
+        >.header-secao
+            text-align: center
+            margin: 0 0 20px
+            >.titulosecao
+                +font-size (40px)
+                margin: 0
+
+        >.formulario-contato   
+            +clearfix         
+            +make-md-column(8)
+            +make-md-column-offset(2)  
+            >.cols
+                +make-row      
+                >.col
+                    +make-md-column (6)
+.popover 
+    >.popover-content
+        +font-family
+        text-align: center
+        >.titulopopover            
+            +font-size (20px)
+            text-transform: uppercase
+            margin: 10px auto
+        >.telefone
+            +font-size (40px)
+            font-weight: $bold

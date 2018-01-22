@@ -1,0 +1,75 @@
+.header-site
+    +clearfix
+    +background-opacity ($preto, .85)
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 1
+    
+    >.container
+        >.logo
+            padding: 13px 0
+            float: left
+            +breakpoint ($celular)               
+                margin: 0 auto 0 auto
+                float: none
+                display: table
+
+        >.links
+            float: right
+            margin: 40px 0 0
+            +breakpoint ($celular)
+                display: table
+                margin: 0 auto 0 auto
+                float: none
+                padding-bottom: 10px
+
+            >.menu
+                display: inline-block
+                +breakpoint ($tablet)
+                    display: none
+                +breakpoint ($celular)
+                    display: none
+                ul
+                    li
+                        display: inline-block
+                        margin: 0 15px 0 0
+                        a
+                            text-transform: uppercase
+                            color: $branco
+                            font-weight: $regular
+
+                            &:hover
+                                &:after
+                                 width: 70%
+
+                            &:after
+                                content: ""
+                                display: table
+                                margin: 5px auto 0
+                                background-color: $marrom-claro
+                                height: 2px
+                                width: 0%
+                                +transition (.3s)
+                        
+
+            >.social
+                display: inline-block
+                +border-radius (20px)
+                border: 1px solid $branco
+                padding: 7px 13px
+
+                +breakpoint ($celular)
+                    display: table
+                    margin: 0 auto 0 auto
+                a
+                    color: $branco
+                a:hover 
+                    color: $marrom-claro
+            >.social:hover                
+                border: 1px solid $marrom-claro
+                +transition (.2s)
+
+                
+                    

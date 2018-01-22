@@ -1,0 +1,53 @@
+.footer	
+	padding: 12px 0 0
+	margin: 30px 0 0
+	color: $branco
+	
+	>.bloco-conteudo
+		margin: 30px 0
+
+		+breakpoint ($tablet)
+			text-align: center
+		+breakpoint ($celular)
+			text-align: center
+
+		>.container
+			>.logorodape
+				+make-md-column (4)
+
+			>.textoinfo
+				+make-md-column (8)				
+				>.infocontato
+					margin-top: 30px
+					display: block
+					>.endereco,						
+					>.telefone,
+					>.email
+						+make-md-column (4)
+						padding-left: 0
+
+	>.subfooter
+		background-color: $subfooter
+		padding: 10px 0  0
+		border-top: 1px solid $branco
+		text-align: center
+
+		>.container
+			>.copyright
+				+make-md-column (3)
+			>.navfooter
+				+make-md-column (6)
+				text-align: center
+				>.menufooter
+					ul 
+						li a 
+							color: $branco
+						li 
+							display: inline
+							&:after
+								content: "|"
+								padding: 0 5px 0						
+							&:last-child
+								content: none
+			>.dev
+				+make-md-column (3)

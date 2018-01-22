@@ -1,0 +1,29 @@
+{
+  "name": "Campanha BIG",
+  "authors": [
+    "talkdesign <daviddesigner@outlook.com.br>"
+  ],
+  "description": "Landing page para campanha",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "breakpoint": "^4.6.4",
+    "sass-flex-mixin": "^1.0.3",
+    "wow": "wow-mit#^1.3.0"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1"
+  }
+}
